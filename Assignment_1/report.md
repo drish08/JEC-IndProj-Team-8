@@ -61,3 +61,17 @@ How To Run-
 >g++ client.c -o client  
    client.exe  
 ```
+
+_
+**Multi-Threading**
+_
+```
+>Multithreading is the ability of a program or an operating system process to manage its use by more than one user at a time  and to even  manage multiple requests  by the same user without  having to have multiple copies of the programming running in the computer.  
+>Multithreading allows multiple concurrent  tasks to  be performed  within a single process. It’s faster for an operating  system (OS) to switch  between threads for an active CPU task than it is to switch between different  processes.  
+>std :: thread  is the thread class that represents a single thread in C++. To start a thread  we simply need to create  a new thread object  and pass the executing  code to be called into the constructor  of the object . Once the object is created  a new thread  is launched which will execute the code specified in callable.  
+
+>Working of <mult-ithreading>  
+1.Using the function object  
+2.Using function pointer  
+3.Using a lambda expression  
+```
