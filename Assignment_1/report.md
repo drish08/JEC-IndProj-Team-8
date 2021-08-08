@@ -19,36 +19,36 @@ The server app returns a reply. In our case , when client sends his name , serve
  
 **Stages for Server-**
 ```
-**Socket Creation & setsockopt--  **
+Socket Creation & setsockopt--  
 
 struct sockaddr_in server_addr;  
     socklen_t size;  
  client = socket(AF_INET, SOCK_STREAM, 0);  
 
-**Bind--**
+Bind--
 
 (bind(client, (struct sockaddr*)&server_addr,sizeof(server_addr)))  
 
-**Listen--**
+Listen--
 
 size = sizeof(server_addr);  
     cout << "=> Looking for clients..." << endl;  
     listen(client, 1);  
     
-**Accept--  **
+Accept--  
 
 server = accept(client,(struct sockaddr *)&server_addr,&size);  
-**
-Send and Recieve--  **
+
+Send and Recieve--  
 
 send(server, buffer, bufsize, 0);  
 recv(server, buffer, bufsize, 0);  
 
-**Stages for Client-**
+Stages for Client-
 
 Socket Connection-- Same as server’s socket creation  
 
-**Connect  --**
+Connect  --
 
 connect(client,(struct sockaddr *)&server_addr, sizeof(server_addr))  
 ```
