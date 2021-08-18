@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <netdb.h>
-#include "TCPClient.h"
+#include "TCPclient.h"
 
 using namespace std;
 
